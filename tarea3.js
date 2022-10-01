@@ -28,6 +28,7 @@ cars.forEach(function(item) {
 /**
  * 3
  */
+/*
  cars.forEach(function(item) {
     if(item.year>2010){
         console.log(item.brand+"-"+item.model+" "+item.year);
@@ -35,8 +36,30 @@ cars.forEach(function(item) {
     }
     
 });
+*/
+/**
+ * 4
+ */
+let luxurytax=true;
+ const results = cars.filter(function(item) {
+    return (item.brand==="Jaguar" || item.brand==="Aston Martin");
+   console.log(luxurytax);
 
+    });
+  console.log(results);
 
-
-
+/*
+ cars.forEach(function(item) {
+    if(item.brand==="Jaguar" || item.brand==="Aston Martin"){
+        console.log(item.id+": "+item.brand+"-"+item.model+" "+item.year+" "+item.color);
+       return true;
+    }
+});
+*/
+/*
+const results = values.filter(function(item) {
+return item > 3;
+});
+console.log(results); // [4]
+ */
 //usar filter
