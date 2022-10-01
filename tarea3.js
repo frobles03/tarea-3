@@ -2,7 +2,9 @@ const cars = require('./cars.json');
 /**
  * 1
  */
-
+ console.log("");
+ console.log("1");
+ console.log("");
 let contador=0;
 cars.forEach(function(item) {
     if(item.year>2010){
@@ -15,7 +17,9 @@ cars.forEach(function(item) {
 console.log("cantidad de autos con años superior a 2010: " + contador);
 contador=0;
 
-
+console.log("");
+console.log("2");
+console.log("");
 /**
  * 2
  */
@@ -32,7 +36,9 @@ cars.forEach(function(item) {
 /**
  * 3
  **/
-
+ console.log("");
+ console.log("3");
+ console.log("");
  cars.forEach(function(item) {
     if(item.year>2010){
         console.log(item.brand+"-"+item.model+" "+item.year);
@@ -46,6 +52,9 @@ cars.forEach(function(item) {
 /**
  * 4
  */
+ console.log("*");
+ console.log("4");
+ console.log("*");
 let luxurytax=true;
 let contador2=0;
 let contador3=0;
@@ -53,37 +62,40 @@ let contador3=0;
     
         if(item.brand==="Jaguar" || item.brand==="Aston Martin"){
         return (item.brand==="Jaguar" || item.brand==="Aston Martin");
-        contador2++;
-        console.log(contador2);
-    }else if(item.brand!=="Jaguar" || item.brand!=="Aston Martin"){
-        contador3++;
-        console.log(contador3);
+        console.log(result.length);
+        
+    }else {
+       
+       
     }
     
    
 
     });
-  console.log(results);
+
 
 
  cars.forEach(function(item) {
     if(item.brand==="Jaguar" || item.brand==="Aston Martin"){
-        console.log(item.id+": "+item.brand+"-"+item.model+" "+item.year+" "+item.color);
+        
        return true;
+    }else{
+        return false;
+        console.log(return);
     }
 });
 
 
-const results = values.filter(function(item) {
-return item > 3;
-});
-console.log(results); 
+
  
 //usar filter
 
 /**
  * 5
  */
+ console.log("*");
+ console.log("5");
+ console.log("*");
 
 cars.forEach(function(item) {
     year=2010;
